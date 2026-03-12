@@ -20,6 +20,7 @@ services:
       dockerfile: docker/php/Dockerfile
     container_name: laravel_php
     user: "1000:1000"
+    working_dir: /var/www
     volumes:
       - ./src:/var/www
     networks:
